@@ -1,0 +1,52 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content
+    
+
+    Section#introSection 
+        div  Welcome to Adarsh Dance classes
+        div.small  Dancing is like dreaming with your feet!
+        
+    Section#missionSection 
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img1.jpg")
+                div.card-content
+                    p Never miss a chance to dance!
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img2.png")
+                div.card-content
+                    p Just get up and dance.
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img3.png")
+
+                div.card-content
+                    p This is the best dance academy of the universe
+
+    Section#SponsorsSection 
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/img/logo4.jpg", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo3.avif", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo2.jpg", alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo3.jfif", alt="Sponsor Image", class="spImage")
+
+            
